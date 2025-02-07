@@ -14,10 +14,10 @@ const Hero = () => {
     >
       <div className="max-w-[1140px] mx-auto items-center grid grid-cols-[1fr_1fr] gap-12">
         <div className="flex flex-col gap-12">
-          <p className="w-[90%] text-white font-[Inter] text-7xl leading-[116%] font-bold">
+          <h1 className="w-[90%] text-white font-[Inter] text-7xl leading-[116%] font-bold">
             Secure <br /> & Tamper-proof
             <span className="font-normal"> digital signature</span>
-          </p>
+          </h1>
           <div className="w-[16%] h-1 bg-gradient-to-r from-[#7a13ce] to-[#09dbce] "></div>
           <p className="w-[95%] text-white font-[Inter] text-lg font-light leading-[140%]">
             Digitally transform your agreement workflows with a legally binding

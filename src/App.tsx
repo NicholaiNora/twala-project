@@ -6,6 +6,7 @@ import Featured from "./components/Featured";
 import Hero from "./components/Hero";
 // import Dropdown from "./components/Dropdown";
 import NavBar from "./components/NavBar";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <main>
         <Hero />
         <Featured />
+        <Products />
       </main>
     </>
   );
