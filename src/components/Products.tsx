@@ -114,7 +114,7 @@ const Products = () => {
                     web 2.0 and web 3.0 ecosystems
                   </p>
                 </div>
-                <a href="" target="_blank" className="w-max text-white cursor-pointer border-0 rounded-0 p-[16px_24px] font-[Inter] text-lg font-medium leading-[120%] bg-[#120623] hover:bg-[#7a13ce] transition-all duration-200 hover:translate-[-4px] hover:shadow-[0_20px_40px_#7a13ce33] hover:outline-0">Learn more about Twala ID</a>
+                <a href="" target="_blank" className="w-max text-white cursor-pointer border-0 rounded-0 p-[16px_24px] font-[Inter] text-lg font-medium leading-[120%] bg-[#120623] hover:bg-[#7a13ce] transition-all duration-200 hover:translate-y-[-4px] hover:shadow-[0_20px_40px_#7a13ce33] hover:outline-0">Learn more about Twala ID</a>
               </div>
             </div>
           </div>
