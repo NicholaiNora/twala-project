@@ -10,6 +10,7 @@ import Logos from "./components/Logos";
 import NavBar from "./components/NavBar";
 import Products from "./components/Products";
 import Solutions from "./components/Solutions";
+import Stats from "./components/Stats";
 import Video from "./components/Video";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Video />
         <Benefits />
         <Solutions />
+        <Stats />
       </main>
     </>
   );
