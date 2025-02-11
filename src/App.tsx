@@ -11,8 +11,9 @@ import NavBar from "./components/NavBar";
 import Products from "./components/Products";
 import Solutions from "./components/Solutions";
 import Stats from "./components/Stats";
-import Testimonials from "./components/Blogs";
+import Blogs from "./components/Blogs";
 import Video from "./components/Video";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Benefits />
         <Solutions />
         <Stats />
+        <Blogs />
         <Testimonials />
       </main>
     </>

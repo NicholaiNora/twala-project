@@ -5,3 +5,17 @@
   grid-template-columns: 1fr 1fr 1fr minmax(auto, 1fr);
   grid-template-areas: ". . . Area";
 }
+
+.gradient-90deg {
+  background: linear-gradient(90deg, #fff0, #f8f8f8);
+}
+
+.background-testimonial {
+  background-color: white;
+  background-image: url(../../src/assets/quote.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: scroll;
+
+}
