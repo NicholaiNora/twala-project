@@ -14,6 +14,7 @@ import Stats from "./components/Stats";
 import Blogs from "./components/Blogs";
 import Video from "./components/Video";
 import Testimonials from "./components/Testimonials";
+import Partners from "./components/Partners";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Stats />
         <Blogs />
         <Testimonials />
+        <Partners />
       </main>
     </>
   );
