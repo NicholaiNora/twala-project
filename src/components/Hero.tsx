@@ -1,6 +1,5 @@
 import twalaImg from "../assets/twala-img.png";
 import arrowDown from "../assets/arrow_down.svg";
-import Featured from "./Featured";
 
 const Hero = () => {
   return (
