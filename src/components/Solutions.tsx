@@ -1,7 +1,7 @@
 import pageEarOutside from "../assets/solution_pageear_outside.svg";
 import pageEarInside from "../assets/solution_pageear_inside.svg";
 import arrowTop from "../assets/arrow-topright.svg";
-import solutionImg from "../assets/img_solution-1-p-800.png";
+import solutionImg from "../assets/img_solution-1-p-1200.png";
 import cityImg from "../assets/img_solution_city.svg";
 const Solutions = () => {
   return (
@@ -28,8 +28,8 @@ const Solutions = () => {
             <div className="border-b-4 border-b-[#7a13ce] flex-[1] self-auto">
               <div className="grid grid-rows-[auto_auto_auto_auto_max-content] grid-cols-[1fr] grid-flow-row">
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/human-resources"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     Human <span className="font-bold">Resources</span>
@@ -37,8 +37,8 @@ const Solutions = () => {
                   <img src={arrowTop} loading="lazy" />
                 </a>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/financial-and-accounting"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     Financial & <span className="font-bold">Accounting</span>
@@ -46,8 +46,8 @@ const Solutions = () => {
                   <img src={arrowTop} loading="lazy" />
                 </a>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/local-government"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     Local <span className="font-bold">Government</span>
@@ -55,8 +55,8 @@ const Solutions = () => {
                   <img src={arrowTop} loading="lazy" />
                 </a>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/legal"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     <span className="font-bold">Legal</span>
@@ -69,7 +69,7 @@ const Solutions = () => {
                     loading="lazy"
                     className="w-[64%] transition-all duration-200 absolute inset-[auto_0%_0%_auto] hover:saturate-[200%]"
                     sizes="(max-width: 479px) 55vw, 29vw"
-                    srcSet="../../src/assets/img_solution-1-p-500.png 500w, ../../src/assets/img_solution-1-p-800.png 800w, ../../src/assets/img_solution-1-p-1080.png 1080w, ../../src/assets/img_solution-1-p-1200.png 1200w"
+                    // srcSet="../../src/assets/img_solution-1-p-500.png 500w, ../../src/assets/img_solution-1-p-800.png 800w, ../../src/assets/img_solution-1-p-1080.png 1080w, ../../src/assets/img_solution-1-p-1200.png 1200w"
                   ></img>
                 </div>
               </div>
@@ -85,8 +85,8 @@ const Solutions = () => {
                   ></img>
                 </div>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/education"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     <span className="font-bold">Education</span>
@@ -94,8 +94,8 @@ const Solutions = () => {
                   <img src={arrowTop} loading="lazy" />
                 </a>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/real-estate"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     Real <span className="font-bold">Estate</span>
@@ -103,8 +103,8 @@ const Solutions = () => {
                   <img src={arrowTop} loading="lazy" />
                 </a>
                 <a
-                  href=""
-                  className="max-w-full flex justify-between py-6 transition-all duration-200 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
+                  href="https://www.twala.io/sales-procurement"
+                  className="max-w-full flex justify-between py-6 transition-all duration-500 ease-in-out bg-[rgba(122,19,206,0)] text-[rgb(38,38,38)] border-b-[1px] border-b-[#7a13ce] hover:bg-[rgb(122,19,206)] hover:text-white hover:px-6 hover:outline-0"
                 >
                   <p className="font-[Inter] text-[32px] leading-[120%]">
                     Sales & <span className="font-bold">Procurement</span>

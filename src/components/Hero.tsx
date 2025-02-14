@@ -1,5 +1,6 @@
 import twalaImg from "../assets/twala-img.png";
 import arrowDown from "../assets/arrow_down.svg";
+import Featured from "./Featured";
 
 const Hero = () => {
   return (
@@ -30,15 +31,15 @@ const Hero = () => {
             width="491"
             className="z-50 flex-[1] inline-block mb-auto mt-auto self-center max-w-[90%] transition-all duration-200 inset-[0%_0%_0%_auto] absolute hover:saturate-150"
             sizes="(max-width: 479px) 100vw, (max-width: 767px) 84vw, 41vw"
-            srcSet="../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-500.png 500w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-800.png 800w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-1080.png 1080w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-1256.png 1256w"
+            // srcSet="../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-500.png 500w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-800.png 800w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-p-1080.png 1080w, ../../src/assets/634430e610fb184affe3286f_img_twalaSign-1256.png 1256w"
           ></img>
         </div>
-        <div className="z-55 text-center flex-[1] flex justify-center self-center pb-12 absolute inset-[auto_0%_0%]">
+        <div className="z-55 text-center flex-[1] flex justify-center self-center pb-12 absolute inset-[auto_0%_0%] scroll-smooth">
           <a
             href="#Feature"
-            className="bg-[#3b0568] justify-center items-center p-4 transition-all duration-200 inline-block"
+            className="bg-[#3b0568] justify-center items-center p-4 transition-all duration-200 inline-block hover:rounded-[100px] hover:bg-[#b631da] hover:shadow-[0_20px_80px_#7a13ce66] scroll-smooth"
           >
-            <img src={arrowDown} />
+            <img src={arrowDown} loading="lazy" />
           </a>
         </div>
       </div>

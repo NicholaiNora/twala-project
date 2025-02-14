@@ -24,67 +24,67 @@ const Logos = () => {
             <img
               src={logo1}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo2}
               loading="lazy"
-              className="w-auto h-[22px] hover:scale-[1.2]"
+              className="w-auto h-[22px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo3}
               loading="lazy"
-              className="h-[48px] pointer-events-auto hover:scale-[1.2]"
+              className="h-[48px] pointer-events-auto transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo4}
               loading="lazy"
-              className="w-auto h-[22px] hover:scale-[1.2]"
+              className="w-auto h-[22px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo5}
               loading="lazy"
-              className="h-[48px] pointer-events-auto hover:scale-[1.2]"
+              className="h-[48px] pointer-events-auto transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo6}
               loading="lazy"
-              className="h-[48px] pointer-events-auto hover:scale-[1.2]"
+              className="h-[48px] pointer-events-auto transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo7}
               loading="lazy"
-              className="h-[48px] pointer-events-auto hover:scale-[1.2]"
+              className="h-[48px] pointer-events-auto transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo8}
               loading="lazy"
-              className="w-auto h-[22px] hover:scale-[1.2]"
+              className="w-auto h-[22px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo9}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo10}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo11}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo12}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
             <img
               src={logo13}
               loading="lazy"
-              className="h-[35px] hover:scale-[1.2]"
+              className="h-[35px] transition-all duration-200 hover:scale-[1.2]"
             />
           </div>
         </div>

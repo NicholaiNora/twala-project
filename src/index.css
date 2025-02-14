@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr minmax(auto, 1fr);

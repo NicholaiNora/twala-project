@@ -1,7 +1,7 @@
 import fileImg from "../assets/file.svg";
 import pageEarOutside from "../assets/stats_pageear_outside.svg";
 import pageEarInside from "../assets/stats_pageear_inside.svg";
-import forestImg from "../assets/img_forest-p-800.png";
+import forestImg from "../assets/img_forest-p-888.png";
 
 const Stats = () => {
   return (
@@ -104,7 +104,7 @@ const Stats = () => {
               loading="lazy"
               width="560"
               sizes="(max-width: 479px) 93vw, (max-width: 991px) 97vw, 560px"
-              srcSet="../../src/assets/img_forest-p-500.png 500w, ../../src/assets/img_forest-p-800.png 800w, ../../src/assets/img_forest-p-888.png 888w"
+              // srcSet="../../src/assets/img_forest-p-500.png 500w, ../../src/assets/img_forest-p-800.png 800w, ../../src/assets/img_forest-p-888.png 888w"
             />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import twalaSupreme from "../assets/Twala_Supreme_Court_enotarization-p-800.png";
+import twalaSupreme from "../assets/Twala_Supreme_Court_enotarization-p-2240.png";
 import dataDriven from "../assets/Why_Data-Driven_Sales.png";
 import pageEarOutside from "../assets/blogs_pageear_outside.svg";
 import pageEarInside from "../assets/blogs_pageear_inside.svg";
@@ -26,7 +26,7 @@ const Blogs = () => {
                   width="164"
                   height="auto"
                   sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 293px"
-                  srcSet="../../src/assets/Twala_Supreme_Court_enotarization-p-500.png 500w, ../../src/assets/Twala_Supreme_Court_enotarization-p-800.png 800w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1080.png 1080w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1600.png 1600w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2000.png 2000w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2240.png 2240w"
+                  // srcSet="../../src/assets/Twala_Supreme_Court_enotarization-p-500.png 500w, ../../src/assets/Twala_Supreme_Court_enotarization-p-800.png 800w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1080.png 1080w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1600.png 1600w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2000.png 2000w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2240.png 2240w"
                 />
                 <img
                   src={twalaSupreme}
@@ -35,7 +35,7 @@ const Blogs = () => {
                   width="164"
                   height="auto"
                   sizes="(max-width: 479px) 93vw, (max-width: 767px) 94vw, (max-width: 991px) 95vw, 293px"
-                  srcSet="../../src/assets/Twala_Supreme_Court_enotarization-p-500.png 500w, ../../src/assets/Twala_Supreme_Court_enotarization-p-800.png 800w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1080.png 1080w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1600.png 1600w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2000.png 2000w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2240.png 2240w"
+                  // srcSet="../../src/assets/Twala_Supreme_Court_enotarization-p-500.png 500w, ../../src/assets/Twala_Supreme_Court_enotarization-p-800.png 800w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1080.png 1080w, ../../src/assets/Twala_Supreme_Court_enotarization-p-1600.png 1600w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2000.png 2000w, ../../src/assets/Twala_Supreme_Court_enotarization-p-2240.png 2240w"
                 />
               </div>
               <div className="gap-y-4 flex flex-col flex-[1] self-auto p-[48px_32px_24px]">

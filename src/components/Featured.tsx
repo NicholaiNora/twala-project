@@ -3,7 +3,7 @@ import twalaStep2 from "../assets/twala-step2.svg";
 import cloudSignatureConsortium from "../assets/cloud-signature-consortium.png";
 const Featured = () => {
   return (
-    <div className="bg-[#ececfa] p-[40px_24px]">
+    <div className="bg-[#ececfa] p-[40px_24px] scroll-mt-30" id="Feature">
       <div className="max-w-[1140px] flex flex-col gap-6 items-stretch z-22 relative mx-auto before:content-center after:content-around">
         <div className="flex justify-center items-stretch gap-6">
           <div className="flex relative self-auto flex-[1] flex-col gap-6">
