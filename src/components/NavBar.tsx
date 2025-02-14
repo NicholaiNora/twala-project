@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <header className="pt-4 pb-4 pl-6 pr-6 z-[99] w-full bg-[rgba(18,6,35,1)] fixed top-0 backdrop-blur-2xl">
       <div className="max-w-[1140px] mx-auto flex items-center">
-        <a href="/">
+        <a href="https://nicholainora.github.io/twala-project/">
           <img src={twala} width="140" className="cursor-pointer" />
         </a>
         <div className="w-full flex items-center justify-end gap-4">
