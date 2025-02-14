@@ -16,6 +16,7 @@ import Video from "./components/Video";
 import Testimonials from "./components/Testimonials";
 import Partners from "./components/Partners";
 import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Partners />
         <Faqs />
       </main>
+      <Footer />
     </>
   );
 }

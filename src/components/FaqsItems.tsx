@@ -1,11 +1,11 @@
 import { useState } from "react";
-interface FaqsItemsProps {
+type FaqsItemsProps = {
   question: string;
   answer: string;
   itemNumber: number;
 }
 
-const FaqsItems: React.FC<FaqsItemsProps>= ({question , answer, itemNumber}) => {
+const FaqsItems= ({question , answer, itemNumber}: FaqsItemsProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleClick = () => {

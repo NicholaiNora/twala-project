@@ -17,5 +17,12 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-attachment: scroll;
+}
 
+.background-footer {
+  background-color: black;
+  background-image: url(../src/assets/bkgd_footer.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
