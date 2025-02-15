@@ -1,8 +1,44 @@
+import { useEffect, useState } from "react";
 import twala from "../assets/twala-logo.png";
 
 const NavBar = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [opacity, setOpacity] = useState(0); // Start with 10px blur
+
+  const handleClick = () => {
+    setIsExpanded((prevState) => !prevState);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Get the scroll position and total scrollable height
+      const scrollPosition = window.scrollY;
+      const maxScroll = 200;
+
+      // Calculate opacity based on the scroll position
+      const newOpacity = scrollPosition / maxScroll;
+
+      // Update the opacity (clamp it between 0 and 1)
+      setOpacity(Math.min(newOpacity, 1));
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array ensures this runs only once on mount
+
   return (
-    <header className="pt-4 pb-4 pl-6 pr-6 z-[99] w-full bg-[rgba(18,6,35,1)] fixed top-0 backdrop-blur-2xl">
+    <header
+      className={`pt-4 pb-4 pl-6 pr-6 z-[99] w-full fixed top-0 bg-[rgba(18,6,35,${opacity})] transition-all duration-200`}
+      style={{
+        backdropFilter: "blur(90px)",
+        willChange: "background",
+      }}
+    >
       <div className="max-w-[1140px] mx-auto flex items-center">
         <a href="https://nicholainora.github.io/twala-project/">
           <img src={twala} width="140" className="cursor-pointer" />
@@ -16,12 +52,84 @@ const NavBar = () => {
               >
                 Features
               </a>
-              <a
+              <div
+                className="max-w-[1140px] z-44 text-left mx-auto relative"
+                onClick={handleClick}
+              >
+                <div className="p-[34px_28px_34px_14px] leading-[120%] select-none cursor-pointer align-top text-[#222] text-left whitespace-nowrap mx-auto no-underline relative flex items-center hover:[&_span]:text-[#09dbce]">
+                  <div className=" mr-2 absolute right-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 330 330"
+                      fill="#09dbce"
+                      stroke="#09dbce"
+                    >
+                      <path d="M325.607 79.393c-5.857-5.857-15.355-5.858-21.213.001l-139.39 139.393L25.607 79.393c-5.857-5.857-15.355-5.858-21.213.001-5.858 5.858-5.858 15.355 0 21.213l150.004 150a14.999 14.999 0 0 0 21.212-.001l149.996-150c5.859-5.857 5.859-15.355.001-21.213z" />
+                    </svg>
+                  </div>
+                  <div className="leading-[120%] cursor-pointer">
+                    <span className="text-white text-base font-medium">
+                      Solutions
+                    </span>
+                  </div>
+                </div>
+                <nav
+                  className={`z-44 bg-white pt-2 pb-2 absolute flex ${
+                    isExpanded ? "block" : "hidden"
+                  } flex-col`}
+                >
+                  <a
+                    href="https://www.twala.io/human-resources"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Human Resources
+                  </a>
+                  <a
+                    href="https://www.twala.io/financial-and-accounting"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Financial & Accounting
+                  </a>
+                  <a
+                    href="https://www.twala.io/local-government"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Local Government
+                  </a>
+                  <a
+                    href="https://www.twala.io/legal"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Legal
+                  </a>
+                  <a
+                    href="https://www.twala.io/education"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Education
+                  </a>
+                  <a
+                    href="https://www.twala.io/real-estate"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Real Estate
+                  </a>
+                  <a
+                    href="https://www.twala.io/sales-procurement"
+                    className="bg-white text-[#120623] border-l-2 border-l-[#0000] p-[12px_24px_12px_16px] text-base font-medium align-top whitespace-nowrap no-underline relative transition-all duration-200 hover:border-l-[#7a13ce] hover:text-[#7a13ce]"
+                  >
+                    Sales & Procurement
+                  </a>
+                </nav>
+              </div>
+              {/* <a
                 href="#solutions"
                 className="text-white p-[32px_12px] font-[Inter] text-[16px] font-medium leading-[120%] hover:text-[#09dbce] active:border-t-2 focus:text-[#7a13ce] focus:border-t-2 cursor-pointer"
               >
                 Solutions
-              </a>
+              </a> */}
               <a
                 href="https://www.twala.io/pricing"
                 className="text-white p-[32px_12px] font-[Inter] text-[16px] font-medium leading-[120%] hover:text-[#09dbce] active:border-t-2 focus:text-[#7a13ce] focus:border-t-2 cursor-pointer"
