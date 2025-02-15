@@ -1,12 +1,22 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import twala from "../assets/twala-logo.png";
 
 const NavBar = () => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [opacity, setOpacity] = useState(0); // Start with 10px blur
+  const navRef = useRef<HTMLDivElement | null>(null); // Reference for the solutions dropdown
 
   const handleClick = () => {
     setIsExpanded((prevState) => !prevState);
+  };
+
+  const handleClickOutside = (e: MouseEvent) => {
+    // Check if the click was outside the navRef
+    console.log(navRef.current);
+    console.log(e.target);
+    if (navRef.current && !navRef.current.contains(e.target as Node)) {
+      setIsExpanded(false);
+    }
   };
 
   useEffect(() => {
@@ -22,12 +32,18 @@ const NavBar = () => {
       setOpacity(Math.min(newOpacity, 1));
     };
 
+    const handleOutsideClick = (e: MouseEvent) => {
+      handleClickOutside(e);
+    };
+
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("click", handleOutsideClick);
 
     // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("click", handleOutsideClick);
     };
   }, []); // Empty dependency array ensures this runs only once on mount
 
@@ -37,7 +53,7 @@ const NavBar = () => {
       style={{
         backdropFilter: "blur(40px)",
         willChange: "background",
-        backgroundColor: `rgba(18, 6, 35, ${opacity})`
+        backgroundColor: `rgba(18, 6, 35, ${opacity})`,
       }}
     >
       <div className="max-w-[1140px] mx-auto flex items-center">
@@ -54,6 +70,7 @@ const NavBar = () => {
                 Features
               </a>
               <div
+                ref={navRef}
                 className="max-w-[1140px] z-44 text-left mx-auto relative"
                 onClick={handleClick}
               >
@@ -77,9 +94,9 @@ const NavBar = () => {
                   </div>
                 </div>
                 <nav
-                  className={`z-44 bg-white pt-2 pb-2 absolute flex ${
+                  className={`z-44 bg-white pt-2 pb-2 absolute flex flex-col ${
                     isExpanded ? "block" : "hidden"
-                  } flex-col`}
+                  }`}
                 >
                   <a
                     href="https://www.twala.io/human-resources"
