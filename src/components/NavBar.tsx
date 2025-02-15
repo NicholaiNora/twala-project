@@ -33,10 +33,11 @@ const NavBar = () => {
 
   return (
     <header
-      className={`pt-4 pb-4 pl-6 pr-6 z-[99] w-full fixed top-0 bg-[rgba(18,6,35,${opacity})] transition-all duration-200`}
+      className={`pt-4 pb-4 pl-6 pr-6 z-[99] w-full fixed top-0 transition-all duration-200`}
       style={{
-        backdropFilter: "blur(90px)",
+        backdropFilter: "blur(40px)",
         willChange: "background",
+        backgroundColor: `rgba(18, 6, 35, ${opacity})`
       }}
     >
       <div className="max-w-[1140px] mx-auto flex items-center">
